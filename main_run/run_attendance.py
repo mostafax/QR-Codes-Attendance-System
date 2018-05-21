@@ -7,7 +7,7 @@ data_folder = "../data/"
 # 3. Rename it with your subject like "ScannerOutput_Theory"
 scanner_output_file_name = "ScannerOutput_Theory"
 # 4. Write the week value like "Week2"
-week_name = "Week2"
+week_name = "Week3"
 # 5. Set students info file name & Run
 students_info_file_name = "StudentsInfo_Theory"
 

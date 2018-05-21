@@ -5,8 +5,6 @@ from xlsx.read_xlsx import ReadXLSX
 class Attendance:
     def __init__(self, students_file_name, attendance_file_name, week_name):
         self.__attendance_mark = "YES"
-        self.__department = "Department"
-        self.__section = "Section"
         self.__name = "Name"
         self.__scanner_output = "ScannerOutput"
         self.__students_file_name = students_file_name
@@ -31,12 +29,7 @@ class Attendance:
     def __take_attendance(self, info, rows_counter):
         for row in range(0, rows_counter):
             data = ""
-            if self.__department in info:
-                department = info[self.__department][row]
-                data += "[" + department + "]"
-            if self.__section in info:
-                section = info[self.__section][row]
-                data += "[" + section + "]"
+
             if self.__name in info:
                 name = info[self.__name][row]
                 data += "[" + name + "]"
